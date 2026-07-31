@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강동균 | Data Engineer Portfolio</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- 01. Hero / 타이틀 -->
+    <section id="hero" class="section section--hero">
+        <div class="hero__content">
+            <h1 class="hero__name"><span class="hero__name-initial">K</span>angDongGyun</h1>
+            <div class="hero__fade"></div>
+            <h1 class="hero__role"><a id="hero__data">Data</a> Engineer</h1>
+            <p class="hero__tagline">무결성 있는 데이터로, 끊기지 않는 시스템을 만듭니다</p>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-indicator__text">SCROLL</span>
+            <span class="scroll-indicator__arrow"></span>
+        </div>
+    </section>
+
+    <!-- 02. 목차 -->
+    <section id="toc" class="section section--toc">
+        <div class="toc__eyebrow">CONTENTS</div>
+        <nav class="toc__list">
+            <a href="#tech-stack" class="toc__item">
+                <span class="toc__idx">01</span>
+                <span class="toc__title">
+                    <span class="toc__title-spacer" aria-hidden="true">기술 스택</span>
+                    <span class="toc__title-stroke" aria-hidden="true">기술 스택</span>
+                    <span class="toc__title-wave">기술 스택</span>
+                </span>
+                <span class="toc__en">TECH STACK</span>
+            </a>
+            <a href="#projects-summary" class="toc__item">
+                <span class="toc__idx">02</span>
+                <span class="toc__title">
+                    <span class="toc__title-spacer" aria-hidden="true">프로젝트 요약</span>
+                    <span class="toc__title-stroke" aria-hidden="true">프로젝트 요약</span>
+                    <span class="toc__title-wave">프로젝트 요약</span>
+                </span>
+                <span class="toc__en">PROJECTS</span>
+            </a>
+            <a href="#projects-detail" class="toc__item">
+                <span class="toc__idx">03</span>
+                <span class="toc__title">
+                    <span class="toc__title-spacer" aria-hidden="true">프로젝트 상세</span>
+                    <span class="toc__title-stroke" aria-hidden="true">프로젝트 상세</span>
+                    <span class="toc__title-wave">프로젝트 상세</span>
+                </span>
+                <span class="toc__en">DETAIL</span>
+            </a>
+            <a href="#closing" class="toc__item">
+                <span class="toc__idx">04</span>
+                <span class="toc__title">
+                    <span class="toc__title-spacer" aria-hidden="true">마무리</span>
+                    <span class="toc__title-stroke" aria-hidden="true">마무리</span>
+                    <span class="toc__title-wave">마무리</span>
+                </span>
+                <span class="toc__en">CLOSING</span>
+            </a>
+        </nav>
+    </section>
+
+    <!-- 03-04. 기술 스택 -->
+    <section id="tech-stack" class="section section--tech-stack">
+        <div class="tech-stack__inner">
+            <div class="tech-stack__layout">
+
+                <div class="tech-stack__cards">
+
+                    <div class="tech-card" style="--tilt: -8deg;">
+                        <span class="tech-card__drop" style="left:18%; --dx:-22px;"></span>
+                        <span class="tech-card__drop" style="left:70%; --dx:26px;"></span>
+                        <div class="tech-card__inner">
+                            <span class="tech-card__chip tech-card__chip--green">LANGUAGE</span>
+                            <div class="tech-card__desc-label">Description :</div>
+                            <p class="tech-card__desc">AI 서버 로직은 <strong>Python</strong>(FastAPI)으로, 메인 서버/비즈니스 로직은 <strong>Java</strong>(Spring Boot)로 구현합니다. 그래픽스·시스템 프로그래밍은 <strong>C</strong>로 직접 다뤄봤습니다.</p>
+                            <div class="tech-card__tags tech-card__tags--green"><span>Python</span><span>Java</span><span>C</span></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-card" style="--tilt: 7deg;">
+                        <span class="tech-card__drop" style="left:22%; --dx:-20px;"></span>
+                        <span class="tech-card__drop" style="left:66%; --dx:24px;"></span>
+                        <div class="tech-card__inner">
+                            <span class="tech-card__chip tech-card__chip--orange">AI &amp; DATA</span>
+                            <div class="tech-card__desc-label">Description :</div>
+                            <p class="tech-card__desc"><strong>LangGraph</strong> 기반 멀티에이전트 라우팅, ChromaDB 벡터 검색(<strong>RAG</strong>) 파이프라인, Health Connect 기반 헬스데이터 <strong>ETL</strong>까지 AI와 데이터 파이프라인을 함께 다룹니다.</p>
+                            <div class="tech-card__tags tech-card__tags--orange"><span>LangGraph</span><span>RAG</span><span>ETL</span></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-card" style="--tilt: -8deg;">
+                        <span class="tech-card__drop" style="left:20%; --dx:-24px;"></span>
+                        <span class="tech-card__drop" style="left:72%; --dx:22px;"></span>
+                        <div class="tech-card__inner">
+                            <span class="tech-card__chip tech-card__chip--cyan">DATABASE</span>
+                            <div class="tech-card__desc-label">Description :</div>
+                            <p class="tech-card__desc">관계형(<strong>PostgreSQL</strong>), 그래프(<strong>Neo4j</strong>), NoSQL(<strong>MongoDB</strong>)까지 목적에 맞는 저장소를 선택해 설계합니다.</p>
+                            <div class="tech-card__tags tech-card__tags--cyan"><span>PostgreSQL</span><span>Neo4j</span><span>MongoDB</span></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-card" style="--tilt: 7deg;">
+                        <span class="tech-card__drop" style="left:16%; --dx:-20px;"></span>
+                        <span class="tech-card__drop" style="left:68%; --dx:26px;"></span>
+                        <div class="tech-card__inner">
+                            <span class="tech-card__chip tech-card__chip--purple">INFRA &amp; OPS</span>
+                            <div class="tech-card__desc-label">Description :</div>
+                            <p class="tech-card__desc"><strong>Docker</strong> 컨테이너 기반 배포, <strong>AWS</strong> API Gateway와 <strong>Cloudflare Tunnel</strong>을 활용한 Zero-Trust 네트워크 구성 경험이 있습니다.</p>
+                            <div class="tech-card__tags tech-card__tags--purple"><span>Docker</span><span>AWS</span><span>Git</span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tech-stack__display" aria-hidden="true">
+                    <span>Portfolio</span>
+                    <span>Tech</span>
+                    <span>Stack</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 05. 프로젝트 성장 과정 요약 -->
+    <section id="projects-summary" class="section section--projects-summary">
+        <div class="projects-summary__inner">
+            <div class="projects-summary__center" id="growthCenter">Projects</div>
+
+            <div class="timeline">
+                <div class="timeline__thread"></div>
+                <div class="timeline__thread-fill" id="gThreadFill"></div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__knot"></div>
+                    <div class="timeline__year">2026</div>
+                    <h3>다티부스 — 메인 프로젝트</h3>
+                    <p>LangGraph 기반 하이브리드 라우팅 + Zero-Trust 보안 구조로 팀 협업 AI를 구현한 캡스톤 프로젝트.</p>
+                    <a class="timeline__go" href="#project-datibus">상세 보기 ↓</a>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__knot"></div>
+                    <div class="timeline__year">2025</div>
+                    <h3>헬스케어 — 서브 프로젝트</h3>
+                    <p>온디바이스(Android) 환경의 제약 속에서 데이터를 수집하고 다루는 법을 배운 프로젝트.</p>
+                    <a class="timeline__go" href="#project-healthcare">상세 보기 ↓</a>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__knot"></div>
+                    <div class="timeline__year">2025</div>
+                    <h3>맑은 출근길 — 처음 프로젝트</h3>
+                    <p>공공데이터로 처음 파이프라인을 만들어본, 모든 것의 출발점.</p>
+                    <a class="timeline__go" href="#project-clear-weather">상세 보기 ↓</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06-08. 프로젝트 상세 -->
+    <section id="projects-detail" class="section section--projects-detail">
+
+        <!-- 메인 프로젝트 -->
+        <article id="project-datibus" class="project-detail project-detail--main reveal">
+            <div class="project-detail__head">
+                <span class="project-detail__badge project-detail__badge--main">MAIN PROJECT</span>
+                <span class="project-detail__year">2026</span>
+            </div>
+            <h3 class="project-detail__label">메인 프로젝트</h3>
+            <h2 class="project-detail__name">Dativus</h2>
+            <p class="project-detail__one-liner">보안과 비용을 동시에 잡은 "팀 전용 AI 팀원" 플랫폼</p>
+            <div class="project-detail__meta">
+                <span>기간 : 2026.03 — 2026.06 (15주)</span>
+                <span>역할 : 팀 프로젝트 (3인, 팀장) → 이후 개인 레포로 Fork하여 단독 고도화 진행 중</span>
+            </div>
+            <div class="project-detail__tags"><span>FastAPI</span><span>LangGraph</span><span>Spring Boot</span><span>PostgreSQL</span><span>ChromaDB</span><span>Neo4j</span><span>Docker</span></div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">PROBLEM + ARCHITECTURE</span>
+                <p>단일 LLM 챗봇은 <strong>전문성 부족(불만족 사유 75.6%)</strong>과 개인화 맥락 유지의 어려움이라는 한계가 뚜렷했고, 퍼블릭 AI 사용 시 <strong>사내 기밀 유출 위험</strong>도 컸음. <strong>Spring Boot</strong>(비즈니스 로직)와 <strong>FastAPI</strong>(AI 코어·SSE 스트리밍)로 서버를 이원화하고, <strong>Cloudflare Tunnel</strong> + <strong>AWS API Gateway</strong>로 Zero-Trust 네트워크를 구성.</p>
+                <div class="project-detail__arch-box project-detail__arch-box--img">
+                    <img src="../img/dativus-architecture.png" alt="Dativus 전체 시스템 아키텍처" class="project-detail__arch-img">
+                    <img src="../img/dativus-workflow.png" alt="Dativus LangGraph 멀티에이전트 워크플로우" class="project-detail__arch-img">
+                </div>
+            </div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">KEY DECISIONS</span>
+                <ul>
+                    <li><strong>MSA 이원화</strong> — 단일 Spring Boot로 SSE를 처리하면 Java 블로킹 I/O 특성상 동시 접속자 증가 시 가용성이 급격히 저하되어, 일반 REST는 Spring Boot(블로킹, 트랜잭션 강점) / AI 추론·SSE는 FastAPI(<strong>asyncio 논블로킹</strong>)로 역할 분리</li>
+                    <li><strong>LangGraph 채택</strong> — 에이전트 간 상태를 그래프 노드/엣지로 명시적으로 관리해 <strong>Recursion Limit</strong> 기반 Deadlock 방지와 조건부 분기가 가능. AutoGen/CrewAI 대비 상태 전이 제어 유연성이 높고 FastAPI 비동기 환경과 통합이 용이</li>
+                    <li><strong>ChromaDB 채택</strong> — Pinecone/Weaviate 같은 상용 서비스 대신, 온프레미스 설치로 벡터 데이터 외부 유출 위험 제거 + Python 네이티브 통합 + <strong>무료 오픈소스(운영비 0원)</strong>라는 이유로 선택</li>
+                </ul>
+            </div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">TROUBLESHOOTING + 성과</span>
+                <ul>
+                    <li>에이전트 간 자가 검증 루프에서 판단 기준이 충돌해 <strong>무한 루프(Deadlock)</strong> 발생 → LangGraph의 <strong>Recursion Limit</strong>으로 검증 순환을 최대 3회로 제한, 초과 시 <strong>Safety-Fallthrough</strong> 모드로 자동 전환해 강제 응답 송출</li>
+                    <li>Groq API 무료 플랜의 분당 호출 한도 초과로 <strong>429 에러</strong> 빈발(특히 멀티에이전트 병렬 팬아웃 구간) → <strong>지수 백오프(1→2→4초)</strong> 재시도 후 로컬 Ollama(Llama-3)로 자동 <strong>Fallback</strong> 전환해 서비스 중단 방지</li>
+                </ul>
+                <div class="project-detail__metrics">
+                    <div class="project-detail__metric"><div class="project-detail__metric-v">100% (30/30)</div><div class="project-detail__metric-l">라우팅 정확도</div></div>
+                    <div class="project-detail__metric"><div class="project-detail__metric-v">100% (48/48)</div><div class="project-detail__metric-l">장애 자동 복구율</div></div>
+                    <div class="project-detail__metric"><div class="project-detail__metric-v">최대 50%↓</div><div class="project-detail__metric-l">외부 API 비용 절감</div></div>
+                </div>
+            </div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">DEV LOG — 시행착오의 기록</span>
+                <div class="project-detail__devlog">
+                    <div class="project-detail__devlog-item"><span class="project-detail__devlog-wk">AI 코어 개발</span><p>에이전트 자가검증 루프 <strong>Deadlock</strong>, Groq Rate Limit <strong>429 에러</strong> 빈발</p></div>
+                    <div class="project-detail__devlog-item"><span class="project-detail__devlog-wk">백엔드 통합</span><p>Spring Boot 경유 SSE 중계 시 스레드 점유·지연 발생 → <strong>FastAPI 직접 연결</strong>로 구조 변경(v5.0)</p></div>
+                    <div class="project-detail__devlog-item"><span class="project-detail__devlog-wk">인프라</span><p>ChromaDB OS 기본 볼륨 사용 시 디스크 공간 부족·I/O 병목 → <strong>48GB 전용 외장 SSD</strong>로 이전</p></div>
+                </div>
+            </div>
+
+            <div class="project-detail__video">
+                <iframe src="https://www.youtube.com/embed/Gxvgw_I2xRk" title="Dativus 시연 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+
+            <div class="tech-card__btns project-detail__btns">
+                <a class="tech-card__btn tech-card__btn--git" href="https://github.com/donggyun0905-ai/Dativus" target="_blank" rel="noopener">Git</a>
+                <a class="tech-card__btn tech-card__btn--yt" href="https://www.youtube.com/watch?v=Gxvgw_I2xRk" target="_blank" rel="noopener">Youtube</a>
+            </div>
+        </article>
+
+        <!-- 서브 프로젝트 -->
+        <article id="project-healthcare" class="project-detail project-detail--sub reveal">
+            <div class="project-detail__head">
+                <span class="project-detail__badge project-detail__badge--sub">SUB PROJECT</span>
+                <span class="project-detail__year">2025</span>
+            </div>
+            <h3 class="project-detail__label">서브 프로젝트</h3>
+            <h2 class="project-detail__name">헬스케어 (DeepStream)</h2>
+            <p class="project-detail__one-liner">AI·헬스데이터 기반 어르신 맞춤형 건강관리 서비스</p>
+            <div class="project-detail__meta">
+                <span>기간 : 2025.09 — 2025.12 (15주)</span>
+                <span>역할 : 웨어러블 앱 & 서버 구축, 사용자 건강데이터 입력/저장 기능 구현, 복약관리(알약 사진인식·DB저장) 구현 · 팀장</span>
+            </div>
+            <div class="project-detail__tags"><span>Android</span><span>Health Connect</span><span>FastAPI</span><span>CNN</span><span>Gemini API</span><span>PostgreSQL</span></div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">BACKGROUND</span>
+                <p>고령층은 복합 만성질환으로 지속 모니터링이 필요하지만(<strong>노인의 33%</strong>), <strong>65세 이상의 25%가 연 1회 이상 낙상</strong>을 경험하고 약물 이상반응의 1/3은 예방 가능함에도 관리가 부재한 상황. 웨어러블·Health Connect·AI를 결합해 실시간 건강 모니터링과 보호자 공유 체계를 구축하고자 시작.</p>
+            </div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">DESIGN DECISIONS + RESULT</span>
+                <ul>
+                    <li><strong>AI 약품 인식</strong> — 알약 촬영 → <strong>CNN</strong> 기반 분류 → 식약처 공공 API 연동으로 성분·효능 제공</li>
+                    <li><strong>헬스데이터 엔지니어링</strong> — 스마트워치(Galaxy Watch 5) → <strong>Health Connect</strong> → Android 브릿지 앱(Retrofit) → FastAPI Ingest Server <strong>ETL</strong> 저장</li>
+                    <li><strong>맞춤형 건강 조언</strong> — <strong>Gemini API</strong> 기반 생성형 AI + <strong>RAG</strong>로 최근 n일 데이터를 분석해 개인화된 조언 생성</li>
+                    <li>보호자 연동 — 실시간 데이터 공유 및 위험 상황 알림</li>
+                </ul>
+                <p class="project-detail__result">결과 : 웨어러블 → Health Connect → FastAPI로 이어지는 실시간 헬스데이터 수집 파이프라인 구축, 실제 웨어러블 데이터 기반 통합 기능 검증 완료</p>
+            </div>
+
+            <div class="project-detail__video">
+                <iframe src="https://www.youtube.com/embed/2od_qf_aPWk" title="Life-Coach 시연 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+
+            <div class="tech-card__btns project-detail__btns">
+                <a class="tech-card__btn tech-card__btn--git" href="https://github.com/donggyun0905-ai/Life-Coach" target="_blank" rel="noopener">Git</a>
+                <a class="tech-card__btn tech-card__btn--yt" href="https://youtu.be/2od_qf_aPWk" target="_blank" rel="noopener">Youtube</a>
+            </div>
+        </article>
+
+        <!-- 처음 프로젝트 -->
+        <article id="project-clear-weather" class="project-detail project-detail--first reveal">
+            <div class="project-detail__head">
+                <span class="project-detail__badge project-detail__badge--first">FIRST PROJECT</span>
+                <span class="project-detail__year">2025</span>
+            </div>
+            <h3 class="project-detail__label">처음 프로젝트</h3>
+            <h2 class="project-detail__name">맑은 출근길 (Nice Commuting Day)</h2>
+            <div class="project-detail__meta">
+                <span>기간 : 2025.04 — 2025.06 (9주)</span>
+                <span>역할 : 로그인/사용자 등록, 메인화면 제작·디자인, 날씨별 옷차림 안내(기상청 API) 구현 · 팀장 (3인)</span>
+                <span>사용 데이터 : 기상청, 한국환경공단 에어코리아, 부산광역시 버스정보시스템 공공데이터</span>
+                <span>기술 : Java, Swing, NetBeans, RESTful API(XML 파싱)</span>
+            </div>
+
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">계기</span>
+                <p>바쁜 출근길에 <strong>날씨·미세먼지·버스 정보</strong>가 여러 플랫폼에 흩어져 있어 매번 따로 확인해야 하는 불편함을 해결하고 싶어서 시작한, 제 첫 팀 프로젝트입니다.</p>
+            </div>
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">핵심 기술 선택 이유</span>
+                <p><strong>기상청·에어코리아 API</strong>는 30분~1시간 단위로만 갱신되어 실시간성 요구와 어긋나는 문제가 있어, 갱신 전 데이터를 임시로 캐싱해 두는 방식으로 해결했습니다. 또한 버스 도착 정보 조회 시 출발·도착 정류장 쌍으로 최단 경로를 탐색하면 지연이 컸는데, <strong>정류장 + 노선 번호만으로 조회</strong>하는 방식으로 바꿔 응답 속도를 개선했습니다. API가 제공하는 원시 값(T1H, WSD, REH)만으로는 부족해 <strong>체감온도</strong>·<strong>이슬점</strong> 계산 로직을 직접 구현해 사용자에게 더 유용한 지표로 가공했습니다.</p>
+            </div>
+            <div class="project-detail__block">
+                <span class="project-detail__block-label">결과 · 배운 점</span>
+                <p>기능 구현률 <strong>95%</strong>, 설계-구현 일치도 <strong>90%</strong>, 성능 <strong>95%</strong>를 달성했습니다. 처음으로 <strong>공공 API 연동과 서버-클라이언트 구조</strong>를 직접 설계해본 경험이었고, 이때 배운 실시간 데이터 파이프라인의 감각이 이후 Dativus의 하이브리드 라우팅 설계로 이어졌습니다.</p>
+            </div>
+            <div class="tech-card__btns project-detail__btns">
+                <a class="tech-card__btn tech-card__btn--git" href="https://github.com/donggyun0905-ai/Clear-Commute" target="_blank" rel="noopener">Git</a>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- 09. 마무리 멘트 -->
+    <section id="closing" class="section section--closing">
+        <div class="closing__content reveal">
+            <div class="closing__band"><span class="closing__q">WHY?</span> 로 시작한 과거를</div>
+            <div class="closing__lines"><span class="closing__u">하루하루 쌓아 미래로</span><br>만들어가겠습니다</div>
+            <div class="closing__de">Data Engineer</div>
+            <div class="closing__sign">강동균 입니다.</div>
+        </div>
+    </section>
+
+    <!-- 10. 마지막 하이라이트 / 지원서 -->
+    <section id="application" class="section section--application">
+        <div class="application__inner">
+
+            <div class="application__msg reveal">
+                <h2>끊임없는 노력으로,<br>미래를 만들어 나갑니다.</h2>
+                <p>아래 지원서를 통해 저에 대해 더 알아보실 수 있어요.</p>
+                <div class="application__cta-row">
+                    <a class="application__cta application__cta--fill" href="mailto:donggyun0905@gmail.com">이메일 보내기</a>
+                    <a class="application__cta" href="https://github.com/donggyun0905-ai" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+
+            <div class="application__phone-wrap">
+                <div class="application__floor-glow" aria-hidden="true"></div>
+                <div class="application__phone" id="phoneFinal">
+                    <div class="application__screen">
+                        <div class="application__photo">강</div>
+                        <div class="application__label">지원서</div>
+                        <div class="application__name">강동균</div>
+                        <div class="application__role">DATA ENGINEER</div>
+
+                        <div class="application__block">
+                            <div class="application__block-t">지원 동기</div>
+                            <p>데이터가 유실, 중단 없이 흐르는 시스템을 만드는 일에 끌립니다. Dativus에서 장애 자동 복구율 100%를 직접 만들어본 경험을, 더 큰 스케일의 인프라에서 증명하고 싶습니다.</p>
+                        </div>
+
+                        <div class="application__block">
+                            <div class="application__block-t">앞으로 하고 싶은 일</div>
+                            <p>비용 효율적이면서도 대용량 트래픽에 끊기지 않는 데이터 인프라를 설계하고, 그 과정의 트레이드오프를 지표로 증명하는 엔지니어가 되고 싶습니다.</p>
+                        </div>
+
+                        <div class="application__block">
+                            <div class="application__block-t">Contact</div>
+                            <div class="application__links">
+                                <a href="tel:010-2459-9066"><span class="application__dot application__dot--yellow"></span>010-2459-9066</a>
+                                <a href="mailto:donggyun0905@gmail.com"><span class="application__dot application__dot--orange"></span>donggyun0905@gmail.com</a>
+                                <a href="https://github.com/donggyun0905-ai" target="_blank" rel="noopener"><span class="application__dot application__dot--green"></span>github.com/donggyun0905-ai</a>
+                                <a href="#hero"><span class="application__dot application__dot--blue"></span>portfolio link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 외부코드  -->
+    <div class="sparkle-fx" id="sparkleFx"></div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
